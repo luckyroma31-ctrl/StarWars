@@ -1,1 +1,16 @@
+[
+  {
+    "modid": "starwarsrashad",
+    "name": "StarWars Rashad",
+    "description": "Самый крутой Star Wars мод для Minecraft 1.12.2",
+    "version": "1.0",
+    "authorList": ["Rashad"],
+    "credits": "Создано с помощью AI",
+    "logoFile": "",
+    "url": "",
+    "updateUrl": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
 
