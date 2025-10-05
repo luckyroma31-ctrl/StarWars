@@ -1,1 +1,37 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = 'https://files.minecraftforge.net/maven' }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'forge'
+
+version = "1.0"
+group = "com.starwarsrashad"
+archivesBaseName = "StarWarsRashad"
+
+sourceCompatibility = targetCompatibility = "1.8"
+
+minecraft {
+    version = "1.12.2-14.23.5.2854"
+    runDir = "run"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("mcmod.info") {
+        expand "version": project.version
+    }
+}
 
